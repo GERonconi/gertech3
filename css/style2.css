@@ -1,0 +1,195 @@
+/* Mejoras de centrado, responsividad y detalles visuales */
+
+/* --- BODY --- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
+
+/* --- HEADER --- */
+header {
+    text-align: center;
+    padding: 32px 10px 24px 10px;
+    background-color: #2d2d44;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+header img {
+    width: 180px;
+    height: 180px;
+    margin-top: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0, 191, 166, 0.2);
+    transition: transform 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+header img:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #00bfa6;
+    margin: 18px 0 10px 0;
+    letter-spacing: 1px;
+}
+
+header h3 {
+    font-style: italic;
+    margin-bottom: 24px;
+    color: #eeeeee;
+    font-size: 1.3rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+header nav a:hover {
+    background-color: #00bfa6;
+    color: #1e1e2f;
+    box-shadow: 0 2px 8px rgba(0,191,166,0.15);
+}
+
+header hr {
+    width: 80%;
+    height: 2px;
+    margin: 24px auto;
+    background-color: #00bfa6;
+    border: none;
+    border-radius: 8px;
+}
+
+/* --- MAIN --- */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 16px 32px 16px;
+}
+
+main h2 {
+    font-size: 2.2rem;
+    color: #00bfa6;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+main p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #eeeeee;
+    background-color: #2d2d44;
+    padding: 18px 22px;
+    border-radius: 12px;
+    margin: 12px auto 0 auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    max-width: 700px;
+    text-align: left;
+}
+
+main ul {
+    margin: 10px 0 10px 30px;
+    padding-left: 0;
+}
+
+#cta {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 24px;
+    background: #00bfa6;
+    color: #1e1e2f;
+    border-radius: 10px;
+    padding: 18px 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,191,166,0.10);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 600px) {
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    main {
+        padding: 18px 4vw;
+    }
+    main h2 {
+        font-size: 1.3rem;
+    }
+    main p {
+        font-size: 1rem;
+        padding: 12px 8px;
+    }
+    #cta {
+        font-size: 1rem;
+        padding: 12px 6px;
+    }
+    header nav ul {
+        gap: 10px;
+    }
+}
+
+/* Agrega esto a tu style.css */
+footer {
+    background: #2d2d44;
+    padding: 24px 0 16px 0;
+    text-align: center;
+    color: #eeeeee;
+    margin-top: 40px;
+    border-top: 2px solid #00bfa6;
+}
+
+.footer-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-contenido p {
+    margin: 0 0 12px 0;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 8px;
+}
+
+.footer-redes a {
+    color: #00bfa6;
+    font-size: 2.2rem;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.footer-redes a:hover {
+    color: #fff;
+    transform: scale(1.15);
+}

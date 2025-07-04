@@ -1,0 +1,176 @@
+#contacto {
+    margin: 50px auto 0 auto;
+    max-width: 600px;
+    padding: 30px 10px;
+    background: #23233a;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,191,166,0.08);
+}
+
+#contacto h2 {
+    color: #00bfa6;
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 2rem;
+}
+
+.contacto-info {
+    margin-bottom: 28px;
+}
+
+.contacto-info p {
+    font-size: 1.1rem;
+    color: #eeeeee;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto-icono {
+    font-size: 1.4rem;
+    color: #00bfa6;
+    min-width: 32px;
+}
+
+.contacto-info a {
+    color: #00bfa6;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+}
+.contacto-info a:hover {
+    text-decoration: underline;
+}
+
+.contacto-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #2d2d44;
+    color: #fff;
+    font-size: 1rem;
+    resize: none;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.contacto-formulario input:focus,
+.contacto-formulario textarea:focus {
+    outline: 2px solid #00bfa6;
+}
+
+.contacto-formulario button {
+    background: #00bfa6;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(0,191,166,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.contacto-formulario button:hover {
+    background: #009e8a;
+    color: #fff;
+}
+
+.redes-sociales-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#redes-sociales .redes-sociales-icons i {
+    font-size: 2.5rem; /* Ajusta el valor según el tamaño que desees */
+}
+
+@media (max-width: 600px) {
+    #contacto {
+        padding: 16px 2vw;
+    }
+    .contacto-formulario button {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+}
+
+/* Agrega esto a tu style.css */
+/* footer {
+    background: #2d2d44;
+    padding: 24px 0 16px 0;
+    text-align: center;
+    color: #eeeeee;
+    margin-top: 40px;
+    border-top: 2px solid #00bfa6;
+}
+
+.footer-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-contenido p {
+    margin: 0 0 12px 0;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 8px;
+}
+
+.footer-redes a {
+    color: #00bfa6;
+    font-size: 2.2rem;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.footer-redes a:hover {
+    color: #fff;
+    transform: scale(1.15);
+} */
+
+#cta {
+            background: linear-gradient(to right, #e0f7fa, #e8f5e9);
+            padding: 2rem;
+            margin: 2rem auto;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            font-size: 1.2rem;
+        }
+
+        .cta-btn {
+            margin-top: 1rem;
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #1b5e20;
+            transform: scale(1.05);
+        }
